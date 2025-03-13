@@ -1,103 +1,58 @@
-import Image from "next/image";
+import HeadingText from "./components/HeadingText";
+import {
+  EmailIcon,
+  GithubIcon,
+  LinkedInIcon,
+  LocationIcon,
+  StudyIcon,
+} from "./components/Icon";
+import ParagraphText from "./components/ParagraphText";
+import PrimaryText from "./components/PrimaryText";
+import { hanalei_fill } from "./layout";
+
+const a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="px-10 lg:px-24 2xl:px-96  grid gap-10">
+      <section id="home" className="py-[50px] grid gap-2.5">
+        <h1
+          className={`text-primary text-[40px] md:text-[50px]/13 lg:text-[66px]/20  ${hanalei_fill.className}`}
+        >
+          Hello, I&apos;m <br /> Maximilian Jaroscak
+        </h1>
+        <h2 className="text-secondary text-2xl lg:text-3xl">
+          A high school student passionate about computers
+        </h2>
+      </section>
+      <section id="about" className="grid gap-[5px]">
+        <HeadingText text="About me" />
+        <div className="grid gap-5">
+          <ParagraphText text="As a high school student passionate about software engineering, I am eager to learn and create impactful projects. I have developed applications that solve real-world problems and enhance everyday experiences. With a strong foundation in both front-end and back-end development, I am excited to further my skills in college." />
+          <div className="grid grid-cols-[30px_1fr] gap-y-[10px] gap-x-[20px] items-center  ">
+            <StudyIcon />
+            <PrimaryText text="STU FIIT, exp. graduation yr. 2028" />
+            <EmailIcon />
+            <PrimaryText text="maximilian.jaroscak@gmail.com" />
+            <LocationIcon />
+            <PrimaryText text="Bratislava" />
+          </div>
+          <div className="flex gap-2.5 hover:cursor:--outward-link-cursor">
+            <LinkedInIcon />
+            <GithubIcon />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <div className="flex flex-wrap gap-14 ">
+        {a.map((aa, i) => (
+          <div
+            key={i}
+            className="grow-1 min-w-[356px] h-[446px] bg-primary text-secondary p-10"
+          >
+            {aa}
+          </div>
+        ))}
+      </div>
+    </main>
   );
 }
