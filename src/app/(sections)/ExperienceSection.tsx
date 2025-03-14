@@ -1,11 +1,15 @@
 import Image from "next/image";
-import HeadingText from "../components/text/HeadingText";
-import ParagraphText from "../components/text/ParagraphText";
-import TitleText from "../components/text/TitleText";
+import HeadingText from "../../components/text/HeadingText";
+import ParagraphText from "../../components/text/ParagraphText";
+import TitleText from "../../components/text/TitleText";
+import { animationClasses } from "@/lib/utils";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="grid gap-2.5">
+    <section
+      id="experience"
+      className={`grid gap-2.5 ${animationClasses(2.5)}`}
+    >
       <HeadingText text="Experience" />
       <div className="grid gap-3.5">
         <div className="flex flex-col sm:flex-row sm:justify-between">

@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
+@plugin 'tailwindcss-motion';
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --primary: #3b2a45;
   --secondary: #7e7383;
+  --third: #9268ab;
+  --gray-custom: #cdcdcd;
   --accent: #a100ff;
   --outward-link-cursor: url("/outward-link-cursor.png"), auto;
   --radius: 0.625rem;
@@ -45,6 +48,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-third: var(--third);
+  --color-gray-custom: var(--gray-custom);
   --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
