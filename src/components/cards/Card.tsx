@@ -28,31 +28,36 @@ export default function Card({
   return (
     <div
       className={cn(
-        `flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-[5px] bg-transparent backdrop-blur-xs rounded-[10px] pb-3`,
+        `flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-3.5 bg-transparent backdrop-blur-xs rounded-[10px] pb-3`,
         animationClasses(3)
       )}
     >
-      <div className="relative w-full h-[200px]">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          //   className="object-cover"
-          className="rounded-t-[10px]"
-          loading="eager"
-        />
-      </div>
-      <TitleText text={title} className="px-1" />
-      <div className="flex gap-[5px] flex-wrap px-1 ">
-        {tags.map((tag, i) => (
-          <Tag key={i} text={tag} />
-        ))}
+      <div>
+        <div className="relative w-full h-[200px]">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            //   className="object-cover"
+            className="rounded-t-[10px] object-cover"
+            loading="eager"
+            quality={100}
+          />
+        </div>
+        <TitleText text={title} className="px-1" />
+        <div className="flex gap-[5px] flex-wrap px-1 ">
+          {tags.map((tag, i) => (
+            <Tag key={i} text={tag} />
+          ))}
+        </div>
       </div>
 
-      <ParagraphText
-        text={description}
-        className="text-base/5 sm:text-lg/6 px-1"
-      />
+      {variant === "project" && (
+        <ParagraphText
+          text={description}
+          className="text-base/5 sm:text-lg/6 px-1"
+        />
+      )}
       <div className="flex gap-2.5 px-1">
         {variant == "project" && github && (
           <LinkButton href={github} text="Code" icon={<GithubInvertedIcon />} />

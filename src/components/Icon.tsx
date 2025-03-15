@@ -1,7 +1,7 @@
 export const StudyIcon = () => (
   <svg
-    width="35"
-    height="31"
+    width="32"
+    height="28"
     viewBox="0 0 35 31"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ export const EmailIcon = () => (
 
 export const LocationIcon = () => (
   <svg
-    width="24"
+    width="28"
     height="32"
     viewBox="0 0 24 32"
     fill="none"

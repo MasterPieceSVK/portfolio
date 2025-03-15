@@ -6,7 +6,6 @@ import {
   LocationIcon,
   StudyIcon,
 } from "../../components/Icon";
-import ParagraphText from "../../components/text/ParagraphText";
 import PrimaryText from "../../components/text/PrimaryText";
 import Link from "next/link";
 import { animationClasses, cn } from "@/lib/utils";
@@ -17,14 +16,20 @@ export default function AboutSection() {
     <section id="about" className={cn(`grid gap-[5px]`, animationClasses(2))}>
       <HeadingText text="About me" />
       <div className="grid gap-5">
-        <ParagraphText text={about.description} />
-        <div className="grid grid-cols-[30px_1fr] gap-y-[10px] gap-x-[20px] items-center  ">
-          <StudyIcon />
-          <PrimaryText text={about.school} />
-          <EmailIcon />
-          <PrimaryText text={about.email} />
-          <LocationIcon />
-          <PrimaryText text={about.location} />
+        {/* <ParagraphText text={about.description} /> */}
+        <div className="flex flex-col sm:gap-2">
+          <div className="grid grid-cols-[30px_1fr] gap-1.5 sm:gap-2.5 items-center">
+            <EmailIcon />
+            <PrimaryText text={about.email} />
+          </div>
+          <div className="grid grid-cols-[30px_1fr] gap-1.5 sm:gap-2.5 items-center">
+            <StudyIcon />
+            <PrimaryText text={about.school} />
+          </div>
+          <div className="grid grid-cols-[30px_1fr] gap-1.5 sm:gap-2.5 items-center">
+            <LocationIcon />
+            <PrimaryText text={about.location} />
+          </div>
         </div>
         <div className="flex gap-2.5">
           <Link
