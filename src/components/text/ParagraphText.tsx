@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 export default function ParagraphText({
   text,
   color = "text-secondary",
@@ -7,5 +9,5 @@ export default function ParagraphText({
   color?: string;
   className?: string;
 }) {
-  return <p className={` text-justify ${color} ${className}`}>{text}</p>;
+  return <p className={cn(`text-justify`, color, className)}>{text}</p>;
 }

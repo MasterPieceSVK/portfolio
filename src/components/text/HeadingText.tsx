@@ -1,7 +1,18 @@
-export default function HeadingText({ text }: { text: string }) {
+import { cn } from "@/lib/utils";
+
+export default function HeadingText({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) {
   return (
     <h3
-      className={`text-primary font-hanalei underline decoration-dotted decoration-accent  underline-offset-4 text-[28px] md:text-[32px] lg:text-[44px] `}
+      className={cn(
+        `text-primary font-hanalei underline decoration-dotted decoration-accent  underline-offset-4 text-[28px] md:text-[32px] lg:text-[44px] `,
+        className
+      )}
     >
       {text}
     </h3>

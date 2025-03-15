@@ -1,3 +1,4 @@
+import { about } from "@/lib/data";
 import { animationClasses } from "@/lib/utils";
 
 export default function BannerSection() {
@@ -13,7 +14,7 @@ export default function BannerSection() {
       <h2
         className={`text-secondary text-2xl lg:text-3xl ${animationClasses(1)}`}
       >
-        A high school student passionate about computers
+        {about.welcomingText}
       </h2>
     </section>
   );

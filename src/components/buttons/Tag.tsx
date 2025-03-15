@@ -1,12 +1,13 @@
 "use client";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function HeaderLink({
-  href,
+export default function Tag({
   text,
+  className,
 }: {
-  href: string;
   text: string;
+  className?: string;
 }) {
   const handleScroll = (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -21,14 +22,17 @@ export default function HeaderLink({
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
 
       window.scrollTo({ top: y, behavior: "smooth" });
-      history.pushState(null, "", `#${targetId}`);
+      window.history.pushState(null, "", `#${targetId}`);
     }
   };
   return (
     <Link
-      href={href}
-      onClick={(e) => handleScroll(e, href)}
-      className="underline hover:decoration-solid duration-150 ease-in transition-all underline-offset-4 hover:underline-offset-8 decoration-accent decoration-dotted"
+      onClick={(e) => handleScroll(e, "#skills")}
+      href={"#skills"}
+      className={cn(
+        "text-xs font-medium bg-gray-custom w-fit grid place-items-center px-3.5 py-1 rounded-[50px] text-primary transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-lg",
+        className
+      )}
     >
       {text}
     </Link>
