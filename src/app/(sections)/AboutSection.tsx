@@ -10,6 +10,7 @@ import PrimaryText from "../../components/text/PrimaryText";
 import Link from "next/link";
 import { about } from "@/lib/data";
 import AnimatedSection from "@/components/AnimatedSection";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export default function AboutSection() {
   return (
@@ -33,6 +34,9 @@ export default function AboutSection() {
         </div>
         <div className="flex gap-2.5">
           <Link
+            onClick={() =>
+              sendGTMEvent({ event: "buttonclicked", value: `linkedin` })
+            }
             href={about.linkedin}
             rel="noopener noreferrer"
             target="_blank"
@@ -41,6 +45,9 @@ export default function AboutSection() {
             <LinkedInIcon />
           </Link>
           <Link
+            onClick={() =>
+              sendGTMEvent({ event: "buttonclicked", value: `github` })
+            }
             href={about.github}
             rel="noopener noreferrer"
             target="_blank"
