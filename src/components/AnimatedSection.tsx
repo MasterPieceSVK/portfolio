@@ -18,11 +18,11 @@ export default function AnimatedSection({
       className={cn(className)}
       initial={{
         y: -50,
-        filter: "blur(5px)",
+        // filter: "blur(5px)",
       }}
       animate={{
         y: 0,
-        filter: "blur(0px)",
+        // filter: "blur(0px)",
       }}
       viewport={{ once: true }}
       transition={{
