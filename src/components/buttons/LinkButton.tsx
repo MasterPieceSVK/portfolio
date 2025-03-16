@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -12,6 +13,9 @@ export default function Button({
 }) {
   return (
     <Link
+      onClick={() =>
+        sendGTMEvent({ event: "buttonClicked", value: `${text} ${href}` })
+      }
       rel="noopener noreferrer"
       target="_blank"
       href={href}

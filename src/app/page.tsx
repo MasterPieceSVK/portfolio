@@ -1,3 +1,4 @@
+"use client";
 import ScrollButton from "@/components/buttons/ScrollButton";
 import AboutSection from "./(sections)/AboutSection";
 import BannerSection from "./(sections)/BannerSection";
