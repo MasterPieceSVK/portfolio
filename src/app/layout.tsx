@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "../components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Script from "next/script";
-
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 export const hanalei_fill = Hanalei_Fill({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,33 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script
-        async
-        src={
-          !process.env.NEXT_PUBLIC_IS_DEV
-            ? "https://www.googletagmanager.com/gtag/js?id=G-HXXEG0YDB9"
-            : ""
-        }
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        id="googletagmanager"
-        strategy="afterInteractive"
-      >{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer',${
-        !process.env.NEXT_PUBLIC_IS_DEV && "GTM-NQ85V8DW"
-      });`}</Script>
-
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '${!process.env.NEXT_PUBLIC_IS_DEV && "G-HXXEG0YDB9"}');`}
-      </Script>
+      <GoogleAnalytics gaId="G-HXXEG0YDB9" />
+      <GoogleTagManager gtmId="GTM-NQ85V8DW" />
 
       <Script
         id="matomo"
@@ -81,16 +56,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       />
 
       <body className={`${jost.className} antialiased `}>
-        {!process.env.NEXT_PUBLIC_IS_DEV && (
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-NQ85V8DW"
-              height="0"
-              width="0"
-              className="display:none;visibility:hidden"
-            ></iframe>
-          </noscript>
-        )}
         <Header />
         {children}
         <Footer />
