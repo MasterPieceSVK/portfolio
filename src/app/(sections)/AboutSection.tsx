@@ -7,10 +7,11 @@ import {
   StudyIcon,
 } from "../../components/Icon";
 import PrimaryText from "../../components/text/PrimaryText";
-import Link from "next/link";
 import { about } from "@/lib/data";
 import AnimatedSection from "@/components/AnimatedSection";
-import { sendGTMEvent } from "@next/third-parties/google";
+
+import CredentialsButton from "@/components/buttons/CredentialsButton";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -21,7 +22,9 @@ export default function AboutSection() {
         <div className="flex flex-col sm:gap-2">
           <div className="grid grid-cols-[30px_1fr] gap-1.5 sm:gap-2.5 items-center">
             <EmailIcon />
-            <PrimaryText text={about.email} />
+            <Link href={`mailto:${about.email}`}>
+              <PrimaryText text={about.email} />
+            </Link>
           </div>
           <div className="grid grid-cols-[30px_1fr] gap-1.5 sm:gap-2.5 items-center">
             <StudyIcon />
@@ -33,28 +36,18 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="flex gap-2.5">
-          <Link
-            onClick={() =>
-              sendGTMEvent({ event: "buttonclicked", value: `linkedin` })
-            }
+          <CredentialsButton
+            text="Tap to see my Linkedin"
             href={about.linkedin}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl"
-          >
-            <LinkedInIcon />
-          </Link>
-          <Link
-            onClick={() =>
-              sendGTMEvent({ event: "buttonclicked", value: `github` })
-            }
+            icon={<LinkedInIcon />}
+            value="linkedin"
+          />
+          <CredentialsButton
+            text="Tap to see my Github"
             href={about.github}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl"
-          >
-            <GithubIcon />
-          </Link>
+            icon={<GithubIcon />}
+            value="github"
+          />
         </div>
       </div>
     </AnimatedSection>

@@ -8,7 +8,7 @@ import ProjectsSection from "./(sections)/ProjectsSection";
 import SkillsSection from "./(sections)/SkillsSection";
 export default function Home() {
   return (
-    <main className="px-5 sm:px-10 lg:px-24 2xl:px-96 grid gap-10">
+    <main className="px-5 sm:px-10 lg:px-24 2xl:px-96 grid gap-10  ">
       <BannerSection />
       <AboutSection />
       <ExperienceSection />

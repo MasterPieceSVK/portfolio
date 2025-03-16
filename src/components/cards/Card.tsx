@@ -65,7 +65,7 @@ export default function Card({
         {variant == "project" && github && (
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger asChild>
+              <TooltipTrigger>
                 <LinkButton
                   href={github}
                   text="Code"
