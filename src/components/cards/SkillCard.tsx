@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Tag from "../buttons/Tag";
 import ParagraphText from "../text/ParagraphText";
-import { animationClasses, cn } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const gradientColors = [
   "to-skill-pink",
@@ -28,8 +28,7 @@ export default function SkillCard({
     <div
       className={cn(
         `flex-1 min-w-64 sm:max-w-72 bg-gradient-to-b from-third rounded-[10px] p-6 grid gap-3.5`,
-        gradientColors[id % gradientColors.length],
-        animationClasses(5)
+        gradientColors[id % gradientColors.length]
       )}
     >
       <div className="grid gap-1">

@@ -22,8 +22,8 @@ export default function ExperienceCard({
           <Image
             alt={company}
             src={image}
-            width={85}
-            height={85}
+            width={100}
+            height={100}
             className="rounded-[10px]"
           />
           <div>

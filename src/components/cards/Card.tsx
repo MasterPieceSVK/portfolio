@@ -4,7 +4,12 @@ import TitleText from "../text/TitleText";
 import Tag from "../buttons/Tag";
 import LinkButton from "../buttons/LinkButton";
 import { GithubInvertedIcon, OutwardLinkIcon } from "../Icon";
-import { animationClasses, cn } from "@/lib/utils";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Card({
   variant,
@@ -27,12 +32,9 @@ export default function Card({
 }) {
   return (
     <div
-      className={cn(
-        `flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-3.5 bg-transparent backdrop-blur-xs rounded-[10px] pb-3`,
-        animationClasses(variant == "project" ? 3 : 4)
-      )}
+      className={`flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-3.5 bg-transparent backdrop-blur-xs rounded-[10px] pb-3`}
     >
-      <div>
+      <div className="grid gap-2">
         <div className="relative w-full h-[200px]">
           <Image
             src={image}
@@ -54,22 +56,60 @@ export default function Card({
       {variant === "project" && description && (
         <ParagraphText
           text={description}
-          className="text-base/5 sm:text-lg/6 px-1"
+          className="text-lg/5 sm:text-lg/5.5 px-1"
         />
       )}
       <div className="flex gap-2.5 px-1">
         {variant == "project" && github && (
-          <LinkButton href={github} text="Code" icon={<GithubInvertedIcon />} />
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <LinkButton
+                  href={github}
+                  text="Code"
+                  icon={<GithubInvertedIcon />}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Tap to see the code and screenshots</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         )}
         {variant == "project" && live && (
-          <LinkButton href={live} text="Live" icon={<OutwardLinkIcon />} />
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <LinkButton
+                  href={live}
+                  text="Live"
+                  icon={<OutwardLinkIcon />}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-center">
+                  Tap to see the live website. <br />
+                  Some projects run on free hosting servrs and may be down.
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         )}
         {variant == "certification" && link && (
-          <LinkButton
-            href={link}
-            text="Certificate"
-            icon={<OutwardLinkIcon />}
-          />
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <LinkButton
+                  href={link}
+                  text="Certificate"
+                  icon={<OutwardLinkIcon />}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Tap to see the certificate</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         )}
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function NameLink({
     <Link
       href={href}
       onClick={(e) => handleScroll(e, href)}
-      className="text-[32px]"
+      className="text-[32px] duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl "
     >
       {text}
     </Link>

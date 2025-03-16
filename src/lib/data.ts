@@ -100,13 +100,13 @@ export const certifications = [
     title: "Full-Stack Engineer",
     tags: [
       "HTML",
-      "Javascript",
+      "JavaScript",
       "CSS",
       "React",
-      "NodeJS",
+      "Node.js",
       "Git",
       "SQL",
-      "Express",
+      "Express.js",
       "REST",
     ],
     link: "https://www.codecademy.com/profiles/MasterPieceSVK/certificates/ffd0f42cce1a44e9a0108b365047a0a6",
@@ -155,6 +155,14 @@ export const skills = [
   },
   {
     id: 2,
+    title: "HTML",
+    tags: ["Frontend"],
+    description:
+      "HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.",
+    image: "/logos/html.svg",
+  },
+  {
+    id: 3,
     title: "React",
     tags: ["Frontend"],
     description:
@@ -162,7 +170,7 @@ export const skills = [
     image: "/logos/react.svg",
   },
   {
-    id: 3,
+    id: 4,
     title: "TypeScript",
     tags: ["Fullstack"],
     description:
@@ -170,7 +178,7 @@ export const skills = [
     image: "/logos/typescript.svg",
   },
   {
-    id: 4,
+    id: 5,
     title: "JavaScript",
     tags: ["Fullstack"],
     description:
@@ -178,7 +186,7 @@ export const skills = [
     image: "/logos/javascript.svg",
   },
   {
-    id: 5,
+    id: 6,
     title: "Node.js",
     tags: ["Backend"],
     description:
@@ -186,7 +194,7 @@ export const skills = [
     image: "/logos/nodejs.svg",
   },
   {
-    id: 6,
+    id: 7,
     title: "Express.js",
     tags: ["Backend"],
     description:
@@ -194,7 +202,7 @@ export const skills = [
     image: "/logos/express.svg",
   },
   {
-    id: 7,
+    id: 8,
     title: "REST",
     tags: ["API"],
     description:
@@ -202,7 +210,7 @@ export const skills = [
     image: "/logos/rest.svg",
   },
   {
-    id: 8,
+    id: 9,
     title: "GraphQL",
     tags: ["API"],
     description:
@@ -210,7 +218,7 @@ export const skills = [
     image: "/logos/graphql.svg",
   },
   {
-    id: 9,
+    id: 10,
     title: "tRPC",
     tags: ["API"],
     description:
@@ -218,7 +226,7 @@ export const skills = [
     image: "/logos/trpc.svg",
   },
   {
-    id: 10,
+    id: 11,
     title: "React Native",
     tags: ["Mobile", "Frontend"],
     description:
@@ -226,7 +234,7 @@ export const skills = [
     image: "/logos/react.svg",
   },
   {
-    id: 11,
+    id: 12,
     title: "Expo",
     tags: ["Mobile"],
     description:
@@ -234,7 +242,14 @@ export const skills = [
     image: "/logos/expo.svg",
   },
   {
-    id: 12,
+    id: 13,
+    title: "CSS",
+    tags: ["Frontend"],
+    description: "CSS (Cascading Style Sheets) is used for styling web pages.",
+    image: "/logos/css.svg",
+  },
+  {
+    id: 14,
     title: "Tailwind CSS",
     tags: ["Frontend"],
     description:
@@ -242,15 +257,15 @@ export const skills = [
     image: "/logos/tailwind.svg",
   },
   {
-    id: 13,
+    id: 15,
     title: "PostgreSQL",
     tags: ["Database"],
     description:
       "PostgreSQL is an advanced open-source relational database management system known for its reliability and performance.",
-    image: "/logos/postgresql.svg",
+    image: "/logos/postgres.svg",
   },
   {
-    id: 14,
+    id: 16,
     title: "SQL",
     tags: ["Database"],
     description:
@@ -258,7 +273,7 @@ export const skills = [
     image: "/logos/sql.svg",
   },
   {
-    id: 15,
+    id: 17,
     title: "Prisma",
     tags: ["Database"],
     description:
@@ -267,7 +282,7 @@ export const skills = [
   },
 
   {
-    id: 16,
+    id: 18,
     title: "Figma",
     tags: ["Design"],
     description:
@@ -275,7 +290,7 @@ export const skills = [
     image: "/logos/figma.svg",
   },
   {
-    id: 17,
+    id: 19,
     title: "C",
     tags: ["Low Level Programming"],
     description:
@@ -283,7 +298,7 @@ export const skills = [
     image: "/logos/c.svg",
   },
   {
-    id: 18,
+    id: 20,
     title: "Go",
     tags: ["Backend"],
     description:
@@ -291,7 +306,7 @@ export const skills = [
     image: "/logos/go.svg",
   },
   {
-    id: 19,
+    id: 21,
     title: "PHP",
     tags: ["Fullstack"],
     description:
@@ -299,7 +314,7 @@ export const skills = [
     image: "/logos/php.svg",
   },
   {
-    id: 20,
+    id: 22,
     title: "Git",
     tags: ["Version Control"],
     description:
@@ -307,7 +322,7 @@ export const skills = [
     image: "/logos/git.svg",
   },
   {
-    id: 21,
+    id: 23,
     title: "PWA",
     tags: ["Frontend"],
     description:
@@ -316,7 +331,7 @@ export const skills = [
   },
 
   {
-    id: 22,
+    id: 24,
     title: "Tesseract",
     tags: ["OCR"],
     description:
@@ -325,7 +340,7 @@ export const skills = [
   },
 
   {
-    id: 23,
+    id: 25,
     title: "React Leaflet",
     tags: ["Frontend"],
     description:

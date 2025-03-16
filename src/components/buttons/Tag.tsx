@@ -1,6 +1,13 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { skills } from "@/lib/data";
 
 export default function Tag({
   text,
@@ -25,16 +32,30 @@ export default function Tag({
       window.history.pushState(null, "", `#${targetId}`);
     }
   };
+
+  const description = skills.find((skill) => skill.title === text)?.description;
+
   return (
-    <Link
-      onClick={(e) => handleScroll(e, "#skills")}
-      href={"#skills"}
-      className={cn(
-        "text-xs font-medium bg-gray-custom w-fit grid place-items-center px-3.5 py-1 rounded-[50px] text-primary transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-lg",
-        className
-      )}
-    >
-      {text}
-    </Link>
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger>
+          <Link
+            onClick={(e) => handleScroll(e, "#skills")}
+            href={"#skills"}
+            className={cn(
+              "text-xs font-medium bg-gray-custom w-fit grid place-items-center px-3.5 py-1 rounded-[50px] text-primary transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-lg",
+              className
+            )}
+          >
+            {text}
+          </Link>
+        </TooltipTrigger>
+        {description && (
+          <TooltipContent className="max-w-[300px]">
+            <p>{description}</p>
+          </TooltipContent>
+        )}
+      </Tooltip>
+    </TooltipProvider>
   );
 }
