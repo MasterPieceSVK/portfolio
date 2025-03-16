@@ -34,6 +34,8 @@ export const projects = [
       "This is my personal portfolio website, built with Next.js and Tailwind CSS to showcase my skills, projects, and experience as a software developer. The site is designed to be fast, responsive, and user-friendly, providing visitors with an easy way to learn about my work and get in touch. It features sections for my projects, skills, certifications and more, all styled with Tailwind CSS for a modern and clean look.",
     github: "https://github.com/MasterPieceSVK/portfolio",
     live: "https://jaroscak.com",
+    figma:
+      "https://www.figma.com/design/fZ5hZHl3vvMn2kwI4vP2DM/Portfolio?node-id=1-2&t=JflDUKnBn8i5xJh8-1",
     image: "/banners/portfolio.png",
   },
   {
@@ -50,7 +52,7 @@ export const projects = [
     ],
     description:
       "OnTime is a streamlined public transportation app designed to simplify your daily commute by focusing on essential features like departure times, vehicle locations, and real-time delays. Built with Next.js and TypeScript, it ensures fast performance with both server-side and client-side rendering. The app offers a PWA experience, allowing users to access it like a native app on mobile devices. With features like nearby stop detection, live vehicle tracking, favorites, and quick searches, OnTime delivers accurate and up-to-date transit information to help you plan your trips more efficiently.",
-    github: "https://github.com/MasterPieceSVK/OnTime",
+    // github: "https://github.com/MasterPieceSVK/OnTime", // code is private for now
     live: "https://on-time-nine.vercel.app",
     image: "/banners/ontimebusapp.png",
   },
@@ -70,7 +72,7 @@ export const projects = [
       "Quizzy is an AI-enhanced quiz creation and participation platform designed to make learning more interactive and efficient. Teachers can effortlessly generate quiz questions using AI and assign quizzes to student groups, while students enjoy a user-friendly environment with instant feedback. The platform features secure user authentication and a fully responsive design, ensuring a seamless experience across desktops, tablets, and mobile devices. Built for the 2024 Gemini API Developer Competition, Quizzy combines modern technologies to deliver an engaging and educational experience.",
     github:
       "https://github.com/MasterPieceSVK/Quizzy-Gemini_API_Developer_competition",
-    live: "https://quizzy-ai.netlify.app",
+    // live: "https://quizzy-ai.netlify.app", // server is off so i disabled this
     image: "/banners/quizzy.png",
   },
   {

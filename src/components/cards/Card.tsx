@@ -3,7 +3,7 @@ import ParagraphText from "../text/ParagraphText";
 import TitleText from "../text/TitleText";
 import Tag from "../buttons/Tag";
 import LinkButton from "../buttons/LinkButton";
-import { GithubInvertedIcon, OutwardLinkIcon } from "../Icon";
+import { FigmaColoredIcon, GithubInvertedIcon, OutwardLinkIcon } from "../Icon";
 import {
   Tooltip,
   TooltipContent,
@@ -20,6 +20,7 @@ export default function Card({
   github,
   live,
   link,
+  figma,
 }: {
   variant: "project" | "certification";
   title: string;
@@ -29,6 +30,7 @@ export default function Card({
   github?: string;
   live?: string;
   link?: string;
+  figma?: string;
 }) {
   return (
     <div
@@ -91,6 +93,22 @@ export default function Card({
                   Tap to see the live website. <br />
                   Some projects run on free hosting servrs and may be down.
                 </p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        )}
+        {variant == "project" && figma && (
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <LinkButton
+                  href={figma}
+                  text="Design"
+                  icon={<FigmaColoredIcon />}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-center">Tap to see the design.</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

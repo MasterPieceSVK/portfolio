@@ -51,7 +51,7 @@ export default function Tag({
           </Link>
         </TooltipTrigger>
         {description && (
-          <TooltipContent className="max-w-[300px]">
+          <TooltipContent className="max-w-[300px] text-center">
             <p>{description}</p>
           </TooltipContent>
         )}
