@@ -42,6 +42,17 @@ export default function RootLayout({
         }
         strategy="afterInteractive"
       ></Script>
+      <Script
+        id="googletagmanager"
+        strategy="afterInteractive"
+      >{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer',${
+        !process.env.NEXT_PUBLIC_IS_DEV && "GTM-NQ85V8DW"
+      });`}</Script>
+
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -70,6 +81,16 @@ export default function RootLayout({
       />
 
       <body className={`${jost.className} antialiased `}>
+        {!process.env.NEXT_PUBLIC_IS_DEV && (
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-NQ85V8DW"
+              height="0"
+              width="0"
+              className="display:none;visibility:hidden"
+            ></iframe>
+          </noscript>
+        )}
         <Header />
         {children}
         <Footer />

@@ -10,7 +10,7 @@ export default function HeadingText({
   return (
     <h3
       className={cn(
-        `text-primary font-hanalei underline decoration-dotted decoration-accent  underline-offset-4 text-[28px] md:text-[32px] lg:text-[44px] `,
+        `text-primary font-hanalei underline decoration-2 decoration-dotted decoration-accent  underline-offset-4 text-[28px] md:text-[32px] lg:text-[44px] `,
         className
       )}
     >
