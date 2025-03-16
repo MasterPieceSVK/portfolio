@@ -14,7 +14,7 @@ export default function Button({
   return (
     <Link
       onClick={() =>
-        sendGTMEvent({ event: "buttonClicked", value: `${text} ${href}` })
+        sendGTMEvent({ event: "buttonclicked", value: `${text} ${href}` })
       }
       rel="noopener noreferrer"
       target="_blank"
