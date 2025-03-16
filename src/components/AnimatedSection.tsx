@@ -17,7 +17,7 @@ export default function AnimatedSection({
       id={id}
       className={cn(className)}
       initial={{
-        y: -50,
+        y: -200,
         // filter: "blur(5px)",
       }}
       animate={{
@@ -26,9 +26,11 @@ export default function AnimatedSection({
       }}
       viewport={{ once: true }}
       transition={{
-        duration: 1,
+        duration: 0.3,
         filter: { delay: delay / 6 },
         type: "spring",
+        bounce: 10,
+        damping: 6,
       }}
     >
       {children}
