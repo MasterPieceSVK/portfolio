@@ -12,9 +12,10 @@
   --gray-custom: #cdcdcd;
   --accent: #a100ff;
   --skill-purple: #6a40ff;
-  --skill-green: #2a452d;
+  --skill-green: #398a43;
   --skill-pink: #f32aa6;
   --skill-orange: #f9412d;
+  --skill-blue: #329bbe;
   --outward-link-cursor: url("/outward-link-cursor.png"), auto;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -60,6 +61,8 @@
   --color-skill-green: var(--skill-green);
   --color-skill-pink: var(--skill-pink);
   --color-skill-orange: var(--skill-orange);
+  --color-skill-blue: var(--skill-blue);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-hanalei: "Hanalei Fill";

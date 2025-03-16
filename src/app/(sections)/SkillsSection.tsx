@@ -6,7 +6,7 @@ import { animationClasses } from "@/lib/utils";
 export default function SkillsSection() {
   return (
     <section id="skills" className={`grid gap-2.5`}>
-      <HeadingText text="Skills" className={animationClasses(3.5)} />
+      <HeadingText text="Skills" className={animationClasses(5)} />
       {/* <div className="grid gap-3.5">
       {experience.map((exp) => (
         <ExperienceCard {...exp} key={exp.id} />

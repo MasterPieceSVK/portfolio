@@ -1,5 +1,5 @@
 import { about } from "@/lib/data";
-import { animationClasses } from "@/lib/utils";
+import { animationClasses, cn } from "@/lib/utils";
 
 export default function BannerSection() {
   return (
@@ -12,7 +12,10 @@ export default function BannerSection() {
         Hello, I&apos;m <br /> Maximilian Jaroscak
       </h1>
       <h2
-        className={`text-secondary text-2xl lg:text-3xl ${animationClasses(1)}`}
+        className={cn(
+          `text-secondary text-2xl lg:text-3xl`,
+          animationClasses(0)
+        )}
       >
         {about.welcomingText}
       </h2>

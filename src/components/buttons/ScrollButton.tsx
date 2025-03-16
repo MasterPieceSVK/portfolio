@@ -19,7 +19,7 @@ export default function ScrollDownButton() {
   useEffect(() => {
     if (window) {
       setHash(window.location.hash.replace("#", "") ?? "#home");
-      // handleScroll(0);
+      //   handleScroll(0);
     }
   }, []);
 

@@ -13,7 +13,7 @@ import { about } from "@/lib/data";
 
 export default function AboutSection() {
   return (
-    <section id="about" className={cn(`grid gap-[5px]`, animationClasses(2))}>
+    <section id="about" className={cn(`grid gap-[5px]`, animationClasses(1))}>
       <HeadingText text="About me" />
       <div className="grid gap-5">
         {/* <ParagraphText text={about.description} /> */}
@@ -34,16 +34,16 @@ export default function AboutSection() {
         <div className="flex gap-2.5">
           <Link
             href={about.linkedin}
-            // rel="noopener noreferrer"
-            // target="_blank"
+            rel="noopener noreferrer"
+            target="_blank"
             className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl"
           >
             <LinkedInIcon />
           </Link>
           <Link
             href={about.github}
-            // rel="noopener noreferrer"
-            // target="_blank"
+            rel="noopener noreferrer"
+            target="_blank"
             className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl"
           >
             <GithubIcon />

@@ -147,66 +147,189 @@ export const certifications = [
 export const skills = [
   {
     id: 1,
-    title: "NextJS",
+    title: "Next.js",
     tags: ["Fullstack", "Frontend"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
+      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications.",
     image: "/logos/nextjslogo.svg",
   },
   {
     id: 2,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "React",
+    tags: ["Frontend"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "React is a JavaScript library for building user interfaces, allowing developers to create reusable UI components efficiently.",
+    image: "/logos/react.svg",
   },
   {
     id: 3,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "TypeScript",
+    tags: ["Fullstack"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript, helping developers catch errors early and improve code maintainability.",
+    image: "/logos/typescript.svg",
   },
   {
     id: 4,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "JavaScript",
+    tags: ["Fullstack"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "JavaScript is a versatile programming language that enables dynamic web development, both on the frontend and backend.",
+    image: "/logos/javascript.svg",
   },
   {
     id: 5,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "Node.js",
+    tags: ["Backend"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "Node.js is a runtime environment that allows JavaScript to be used on the server side, enabling scalable backend applications.",
+    image: "/logos/nodejs.svg",
   },
   {
     id: 6,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "Express.js",
+    tags: ["Backend"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "Express.js is a fast and minimalist web framework for Node.js, used for building RESTful APIs and web applications.",
+    image: "/logos/express.svg",
   },
   {
     id: 7,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "REST",
+    tags: ["API"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "REST (Representational State Transfer) is an architectural style for designing scalable web APIs using HTTP methods.",
+    image: "/logos/rest.svg",
   },
   {
     id: 8,
-    title: "NextJS",
-    tags: ["Fullstack", "Frontend"],
+    title: "GraphQL",
+    tags: ["API"],
     description:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-    image: "/logos/nextjslogo.svg",
+      "GraphQL is a query language for APIs that provides a more flexible and efficient alternative to REST APIs.",
+    image: "/logos/graphql.svg",
+  },
+  {
+    id: 9,
+    title: "tRPC",
+    tags: ["API"],
+    description:
+      "tRPC enables typesafe APIs using TypeScript, allowing seamless communication between frontend and backend applications without the need for GraphQL.",
+    image: "/logos/trpc.svg",
+  },
+  {
+    id: 10,
+    title: "React Native",
+    tags: ["Mobile", "Frontend"],
+    description:
+      "React Native is a framework for building mobile applications using JavaScript and React, enabling cross-platform development.",
+    image: "/logos/react.svg",
+  },
+  {
+    id: 11,
+    title: "Expo",
+    tags: ["Mobile"],
+    description:
+      "Expo is a framework and platform for universal React applications, streamlining the development of React Native apps.",
+    image: "/logos/expo.svg",
+  },
+  {
+    id: 12,
+    title: "Tailwind CSS",
+    tags: ["Frontend"],
+    description:
+      "Tailwind CSS is a utility-first CSS framework that enables rapid UI development with pre-defined classes.",
+    image: "/logos/tailwind.svg",
+  },
+  {
+    id: 13,
+    title: "PostgreSQL",
+    tags: ["Database"],
+    description:
+      "PostgreSQL is an advanced open-source relational database management system known for its reliability and performance.",
+    image: "/logos/postgresql.svg",
+  },
+  {
+    id: 14,
+    title: "SQL",
+    tags: ["Database"],
+    description:
+      "SQL (Structured Query Language) is a language used for managing and querying relational databases.",
+    image: "/logos/sql.svg",
+  },
+  {
+    id: 15,
+    title: "Prisma",
+    tags: ["Database"],
+    description:
+      "Prisma is a modern ORM for Node.js and TypeScript that simplifies database access and management.",
+    image: "/logos/prisma.svg",
+  },
+
+  {
+    id: 16,
+    title: "Figma",
+    tags: ["Design"],
+    description:
+      "Figma is a cloud-based design tool used for UI/UX design, prototyping, and collaboration.",
+    image: "/logos/figma.svg",
+  },
+  {
+    id: 17,
+    title: "C",
+    tags: ["Low Level Programming"],
+    description:
+      "C is a general-purpose programming language known for its performance and low-level memory manipulation capabilities.",
+    image: "/logos/c.svg",
+  },
+  {
+    id: 18,
+    title: "Go",
+    tags: ["Backend"],
+    description:
+      "Go (Golang) is a statically typed, compiled language designed for high performance and concurrency.",
+    image: "/logos/go.svg",
+  },
+  {
+    id: 19,
+    title: "PHP",
+    tags: ["Fullstack"],
+    description:
+      "PHP is a widely-used scripting language designed for web development and server-side scripting.",
+    image: "/logos/php.svg",
+  },
+  {
+    id: 20,
+    title: "Git",
+    tags: ["Version Control"],
+    description:
+      "Git is a distributed version control system that allows developers to track changes and collaborate on projects.",
+    image: "/logos/git.svg",
+  },
+  {
+    id: 21,
+    title: "PWA",
+    tags: ["Frontend"],
+    description:
+      "Progressive Web Apps (PWA) offer a native app-like experience using web technologies, allowing offline usage and fast performance.",
+    image: "/logos/pwa.svg",
+  },
+
+  {
+    id: 22,
+    title: "Tesseract",
+    tags: ["OCR"],
+    description:
+      "Tesseract is an optical character recognition (OCR) engine that extracts text from images.",
+    image: "/logos/tesseract.svg",
+  },
+
+  {
+    id: 23,
+    title: "React Leaflet",
+    tags: ["Frontend"],
+    description:
+      "React Leaflet is a React library for integrating interactive maps into web applications using Leaflet.js.",
+    image: "/logos/reactleaflet.svg",
   },
 ];

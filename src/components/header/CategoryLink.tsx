@@ -21,6 +21,7 @@ export default function NameLink({
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
 
       window.scrollTo({ top: y, behavior: "smooth" });
+      window.history.pushState(null, "", `#${targetId}`);
     }
   };
   return (

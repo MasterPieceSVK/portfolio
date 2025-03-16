@@ -20,7 +20,7 @@ export default function Card({
   title: string;
   image: string;
   tags: string[];
-  description: string;
+  description?: string;
   github?: string;
   live?: string;
   link?: string;
@@ -29,7 +29,7 @@ export default function Card({
     <div
       className={cn(
         `flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-3.5 bg-transparent backdrop-blur-xs rounded-[10px] pb-3`,
-        animationClasses(3)
+        animationClasses(variant == "project" ? 3 : 4)
       )}
     >
       <div>
@@ -38,7 +38,6 @@ export default function Card({
             src={image}
             alt={title}
             fill
-            //   className="object-cover"
             className="rounded-t-[10px] object-cover"
             loading="eager"
             quality={100}
@@ -52,7 +51,7 @@ export default function Card({
         </div>
       </div>
 
-      {variant === "project" && (
+      {variant === "project" && description && (
         <ParagraphText
           text={description}
           className="text-base/5 sm:text-lg/6 px-1"
@@ -68,7 +67,7 @@ export default function Card({
         {variant == "certification" && link && (
           <LinkButton
             href={link}
-            text="Certification"
+            text="Certificate"
             icon={<OutwardLinkIcon />}
           />
         )}
