@@ -3,6 +3,7 @@ import { Jost, Hanalei_Fill, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Script from "next/script";
 
 export const hanalei_fill = Hanalei_Fill({
   variable: "--font-geist-sans",
@@ -32,9 +33,44 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        async
+        src={
+          !process.env.NEXT_PUBLIC_IS_DEV
+            ? "https://www.googletagmanager.com/gtag/js?id=G-HXXEG0YDB9"
+            : ""
+        }
+        strategy="afterInteractive"
+      ></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${!process.env.NEXT_PUBLIC_IS_DEV && "G-HXXEG0YDB9"}');`}
+      </Script>
+
+      <Script
+        id="matomo"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://www.rowbox.com/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '6']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();`,
+        }}
+      />
+
       <body className={`${jost.className} antialiased `}>
         <Header />
-        asdasd
         {children}
         <Footer />
       </body>
