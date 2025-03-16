@@ -28,7 +28,7 @@ export default function HeaderLink({
     <Link
       href={href}
       onClick={(e) => handleScroll(e, href)}
-      className="underline hover:decoration-solid duration-150 ease-in transition-all underline-offset-4 hover:underline-offset-8 decoration-accent decoration-dotted"
+      className="underline decoration-[3px] hover:decoration-solid duration-150 ease-in transition-all underline-offset-4 hover:underline-offset-8 decoration-accent decoration-dotted"
     >
       {text}
     </Link>
