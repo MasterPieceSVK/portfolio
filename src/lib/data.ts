@@ -157,6 +157,14 @@ export const skills = [
   },
   {
     id: 2,
+    title: "SvelteKit",
+    tags: ["Fullstack", "Frontend"],
+    description:
+      "SvelteKit is a framework for building web applications with Svelte, providing server-side rendering, routing, and other features out of the box.",
+    image: "/logos/svelte.svg",
+  },
+  {
+    id: 3,
     title: "HTML",
     tags: ["Frontend"],
     description:
@@ -164,7 +172,7 @@ export const skills = [
     image: "/logos/html.svg",
   },
   {
-    id: 3,
+    id: 4,
     title: "React",
     tags: ["Frontend"],
     description:
@@ -172,7 +180,15 @@ export const skills = [
     image: "/logos/react.svg",
   },
   {
-    id: 4,
+    id: 5,
+    title: "Svelte",
+    tags: ["Frontend"],
+    description:
+      "Svelte is a component-based JavaScript framework that compiles components into highly efficient vanilla JavaScript at build time.",
+    image: "/logos/svelte.svg",
+  },
+  {
+    id: 6,
     title: "TypeScript",
     tags: ["Fullstack"],
     description:
@@ -180,7 +196,7 @@ export const skills = [
     image: "/logos/typescript.svg",
   },
   {
-    id: 5,
+    id: 7,
     title: "JavaScript",
     tags: ["Fullstack"],
     description:
@@ -188,7 +204,7 @@ export const skills = [
     image: "/logos/javascript.svg",
   },
   {
-    id: 6,
+    id: 8,
     title: "Node.js",
     tags: ["Backend"],
     description:
@@ -196,7 +212,7 @@ export const skills = [
     image: "/logos/nodejs.svg",
   },
   {
-    id: 7,
+    id: 9,
     title: "Express.js",
     tags: ["Backend"],
     description:
@@ -204,7 +220,7 @@ export const skills = [
     image: "/logos/express.svg",
   },
   {
-    id: 8,
+    id: 10,
     title: "REST",
     tags: ["API"],
     description:
@@ -212,7 +228,7 @@ export const skills = [
     image: "/logos/rest.svg",
   },
   {
-    id: 9,
+    id: 11,
     title: "GraphQL",
     tags: ["API"],
     description:
@@ -220,7 +236,7 @@ export const skills = [
     image: "/logos/graphql.svg",
   },
   {
-    id: 10,
+    id: 12,
     title: "tRPC",
     tags: ["API"],
     description:
@@ -228,7 +244,7 @@ export const skills = [
     image: "/logos/trpc.svg",
   },
   {
-    id: 11,
+    id: 13,
     title: "React Native",
     tags: ["Mobile", "Frontend"],
     description:
@@ -236,7 +252,7 @@ export const skills = [
     image: "/logos/react.svg",
   },
   {
-    id: 12,
+    id: 14,
     title: "Expo",
     tags: ["Mobile"],
     description:
@@ -244,14 +260,14 @@ export const skills = [
     image: "/logos/expo.svg",
   },
   {
-    id: 13,
+    id: 15,
     title: "CSS",
     tags: ["Frontend"],
     description: "CSS (Cascading Style Sheets) is used for styling web pages.",
     image: "/logos/css.svg",
   },
   {
-    id: 14,
+    id: 16,
     title: "Tailwind CSS",
     tags: ["Frontend"],
     description:
@@ -259,7 +275,7 @@ export const skills = [
     image: "/logos/tailwind.svg",
   },
   {
-    id: 15,
+    id: 17,
     title: "PostgreSQL",
     tags: ["Database"],
     description:
@@ -267,7 +283,7 @@ export const skills = [
     image: "/logos/postgres.svg",
   },
   {
-    id: 16,
+    id: 18,
     title: "SQL",
     tags: ["Database"],
     description:
@@ -275,7 +291,7 @@ export const skills = [
     image: "/logos/sql.svg",
   },
   {
-    id: 17,
+    id: 19,
     title: "Prisma",
     tags: ["Database"],
     description:
@@ -284,7 +300,7 @@ export const skills = [
   },
 
   {
-    id: 18,
+    id: 20,
     title: "Figma",
     tags: ["Design"],
     description:
@@ -292,7 +308,7 @@ export const skills = [
     image: "/logos/figma.svg",
   },
   {
-    id: 19,
+    id: 21,
     title: "C",
     tags: ["Low Level Programming"],
     description:
@@ -300,7 +316,7 @@ export const skills = [
     image: "/logos/c.svg",
   },
   {
-    id: 20,
+    id: 22,
     title: "Go",
     tags: ["Backend"],
     description:
@@ -308,7 +324,7 @@ export const skills = [
     image: "/logos/go.svg",
   },
   {
-    id: 21,
+    id: 23,
     title: "PHP",
     tags: ["Fullstack"],
     description:
@@ -316,7 +332,7 @@ export const skills = [
     image: "/logos/php.svg",
   },
   {
-    id: 22,
+    id: 24,
     title: "Git",
     tags: ["Version Control"],
     description:
@@ -324,7 +340,7 @@ export const skills = [
     image: "/logos/git.svg",
   },
   {
-    id: 23,
+    id: 25,
     title: "PWA",
     tags: ["Frontend"],
     description:
@@ -333,7 +349,7 @@ export const skills = [
   },
 
   {
-    id: 24,
+    id: 26,
     title: "Tesseract",
     tags: ["OCR"],
     description:
@@ -342,11 +358,19 @@ export const skills = [
   },
 
   {
-    id: 25,
+    id: 27,
     title: "React Leaflet",
     tags: ["Frontend"],
     description:
       "React Leaflet is a React library for integrating interactive maps into web applications using Leaflet.js.",
     image: "/logos/reactleaflet.svg",
+  },
+  {
+    id: 28,
+    title: "Docker",
+    tags: ["DevOps"],
+    description:
+      "Docker is a platform for developing, shipping, and running applications in containers, providing a consistent environment across different systems.",
+    image: "/logos/docker.svg",
   },
 ];
