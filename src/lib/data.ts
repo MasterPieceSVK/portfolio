@@ -29,7 +29,7 @@ export const projects = [
   {
     id: 1,
     title: "Portfolio website",
-    tags: ["Next.js", "Tailwind CSS", "Figma"],
+    tags: ["Next.js", "Tailwind CSS", "Figma", "Docker"],
     description:
       "This is my personal portfolio website, built with Next.js and Tailwind CSS to showcase my skills, projects, and experience as a software developer. The site is designed to be fast, responsive, and user-friendly, providing visitors with an easy way to learn about my work and get in touch. It features sections for my projects, skills, certifications and more, all styled with Tailwind CSS for a modern and clean look.",
     github: "https://github.com/MasterPieceSVK/portfolio",
