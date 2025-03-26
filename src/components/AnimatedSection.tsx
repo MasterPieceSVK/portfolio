@@ -1,5 +1,4 @@
-"use client";
-import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export default function AnimatedSection({
   children,
@@ -13,19 +12,21 @@ export default function AnimatedSection({
   delay?: number;
 }) {
   return (
-    <section id={id}>
-      <motion.div
-        initial={{ opacity: 0, transform: "translateY(120px)" }}
-        animate={{ opacity: 1, transform: "translateY(0)" }}
-        transition={{
-          delay: delay * 0.2,
-          duration: 0.5,
-          ease: "easeOut",
-        }}
-        className={className}
-      >
-        {children}
-      </motion.div>
+    <section
+      id={id}
+      className={cn(
+        `
+        opacity-0 
+        transition-opacity 
+        duration-500 
+        ease-out 
+        delay-${delay}
+        animate-fade-in 
+      `,
+        className
+      )}
+    >
+      {children}
     </section>
   );
 }
