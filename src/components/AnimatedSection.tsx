@@ -1,30 +1,27 @@
 "use client";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+
 export default function AnimatedSection({
   children,
   id,
   className,
-  delay,
+  delay = 0,
 }: {
   children: React.ReactNode;
   id: string;
   className?: string;
-  delay: number;
+  delay?: number;
 }) {
   return (
-    <section
-      id={id}
-      // className={cn(
-      //   "motion-scale-in-[1.1] motion-duration-[0.34s]/scale motion-ease-bounce",
-      //   className
-      // )}
-    >
+    <section id={id}>
       <motion.div
-        initial={{ y: 120, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        // viewport={{ once: true }}
-        transition={{ delay: 0.2 * delay }}
+        initial={{ opacity: 0, transform: "translateY(120px)" }}
+        animate={{ opacity: 1, transform: "translateY(0)" }}
+        transition={{
+          delay: delay * 0.2,
+          duration: 0.5,
+          ease: "easeOut",
+        }}
         className={className}
       >
         {children}
