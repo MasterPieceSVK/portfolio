@@ -1,9 +1,10 @@
 "use client";
-import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 export default function AnimatedSection({
   children,
   id,
   className,
+  delay,
 }: {
   children: React.ReactNode;
   id: string;
@@ -13,12 +14,21 @@ export default function AnimatedSection({
   return (
     <section
       id={id}
-      className={cn(
-        "motion-scale-in-[1.1] motion-duration-[0.34s]/scale motion-ease-bounce",
-        className
-      )}
+      // className={cn(
+      //   "motion-scale-in-[1.1] motion-duration-[0.34s]/scale motion-ease-bounce",
+      //   className
+      // )}
     >
-      {children}
+      <motion.div
+        initial={{ y: 120, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        // viewport={{ once: true }}
+        transition={{ delay: 0.2 * delay }}
+        className={className}
+      >
+        {children}
+      </motion.div>
     </section>
   );
 }
