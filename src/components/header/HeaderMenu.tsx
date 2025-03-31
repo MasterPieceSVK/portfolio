@@ -1,5 +1,5 @@
 "use client";
-import { Drawer, DrawerContent } from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 
 import useMediaQuery from "@/hooks/MediaQuery";
 import HeaderLink from "./HeaderLink";
@@ -31,11 +31,9 @@ export default function HeaderMenu() {
   }
   return (
     <Drawer open={drawerOpen}>
-      {/* <DrawerTrigger> */}
-      <button onClick={() => setDrawerOpen(true)}>
+      <DrawerTrigger onClick={() => setDrawerOpen(true)} className="p-4">
         <MenuIcon />
-      </button>
-      {/* </DrawerTrigger> */}
+      </DrawerTrigger>
       <DrawerContent>
         <DialogTitle className="sr-only">Menu</DialogTitle>
         <div className="flex flex-col justify-center items-center h-full gap-9">
