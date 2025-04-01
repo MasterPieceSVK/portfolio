@@ -30,7 +30,7 @@ export default function HeaderMenu() {
     );
   }
   return (
-    <Drawer open={drawerOpen}>
+    <Drawer open={drawerOpen} direction="bottom" onOpenChange={setDrawerOpen}>
       <DrawerTrigger onClick={() => setDrawerOpen(true)} className="p-4">
         <MenuIcon />
       </DrawerTrigger>
