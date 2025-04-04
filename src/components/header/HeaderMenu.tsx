@@ -31,10 +31,7 @@ export default function HeaderMenu() {
   }
   return (
     <Drawer open={drawerOpen} direction="bottom" onOpenChange={setDrawerOpen}>
-      <button
-        onClick={() => setDrawerOpen(true)}
-        className={`p-4 ${drawerOpen && "bg-red-500"} hover:bg-green-500`}
-      >
+      <button onClick={() => setDrawerOpen(true)} className="p-4">
         <MenuIcon />
       </button>
       <DrawerContent>
