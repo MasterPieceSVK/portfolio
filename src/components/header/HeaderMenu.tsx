@@ -4,7 +4,7 @@ import { Drawer, DrawerContent } from "@/components/ui/drawer";
 import useMediaQuery from "@/hooks/MediaQuery";
 import HeaderLink from "./HeaderLink";
 import { MenuIcon } from "../Icon";
-import { DialogTitle } from "@radix-ui/react-dialog";
+import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 import MobileHeaderLink from "./MobileHeaderLink";
 import { useState } from "react";
 const categories = [
@@ -39,8 +39,8 @@ export default function HeaderMenu() {
       </button>
       <DrawerContent>
         <DialogTitle className="sr-only">Menu</DialogTitle>
-        {/* <DialogDescription className="sr-only">Menu</DialogDescription> */}
-        <div className="flex flex-col justify-center items-center h-lvh z-50 gap-9">
+        <DialogDescription className="sr-only">Menu</DialogDescription>
+        <div className="flex flex-col justify-center items-center h-full gap-9">
           <button
             onClick={() => setDrawerOpen(false)}
             className="font-hanalei text-4xl"
