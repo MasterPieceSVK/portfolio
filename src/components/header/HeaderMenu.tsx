@@ -40,7 +40,7 @@ export default function HeaderMenu() {
       <DrawerContent>
         <DialogTitle className="sr-only">Menu</DialogTitle>
         <DialogDescription className="sr-only">Menu</DialogDescription>
-        <div className="flex flex-col justify-center items-center h-full gap-9">
+        <div className="flex flex-col justify-center items-center h-lvh z-50 gap-9">
           <button
             onClick={() => setDrawerOpen(false)}
             className="font-hanalei text-4xl"
