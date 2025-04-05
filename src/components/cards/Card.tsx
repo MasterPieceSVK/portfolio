@@ -34,7 +34,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-3.5 bg-transparent backdrop-blur-xs rounded-[10px] pb-3`}
+      className={`flex-1 min-w-[350px] max-w-[450px] h-fit grid gap-3.5 bg-white/80 rounded-[10px] pb-3`}
     >
       <div className="grid gap-2">
         <div className="relative w-full h-[200px]">

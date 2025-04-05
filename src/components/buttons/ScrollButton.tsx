@@ -45,14 +45,13 @@ export default function ScrollDownButton() {
       window.history.pushState(null, "", `#${targetId}`);
     }
   };
-
   return (
-    <div className="fixed bottom-2 xs:bottom-10 z-30 right-2 xs:right-10 motion-scale-in-[1.5] motion-duration-[0.34s]/scale motion-ease-bounce">
+    <div className="fixed bottom-2 xs:bottom-10 z-30 right-2 xs:right-10 motion-scale-in-[1.5] motion-duration-[0.34s]/scale motion-ease-bounce ">
       <Link
         href="#projects"
         onClick={(e) => handleScroll(1, e)}
         className="  bg-primary rounded-full p-3 size-[45px] xs:size-[65px] grid place-items-center shadow-lg
-            transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-120 hover:drop-shadow-lg "
+            transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-120 hover:drop-shadow-lg"
       >
         <div
           className={cn(
