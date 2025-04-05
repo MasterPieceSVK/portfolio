@@ -1,32 +1,27 @@
 import { cn } from "@/lib/utils";
-
+import { motion } from "motion/react";
 export default function AnimatedSection({
   children,
   id,
   className,
-  delay = 0,
 }: {
   children: React.ReactNode;
   id: string;
   className?: string;
-  delay?: number;
 }) {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, backdropFilter: "blur(10px)", y: 50 }}
+      whileInView={{ opacity: 1, backdropFilter: "blur(0px)", y: 0 }}
+      transition={{
+        duration: 2,
+        type: "spring",
+      }}
+      viewport={{ once: true }}
       id={id}
-      className={cn(
-        `
-        opacity-0 
-        transition-opacity 
-        duration-500 
-        ease-out 
-        delay-${delay}
-        animate-fade-in 
-      `,
-        className
-      )}
+      className={cn(className)}
     >
       {children}
-    </section>
+    </motion.section>
   );
 }

@@ -8,14 +8,13 @@ import {
 } from "../../components/Icon";
 import PrimaryText from "../../components/text/PrimaryText";
 import { about } from "@/lib/data";
-import AnimatedSection from "@/components/AnimatedSection";
 
 import CredentialsButton from "@/components/buttons/CredentialsButton";
 import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <AnimatedSection id="about" className={`grid gap-[5px]`} delay={1}>
+    <section id="about" className={`grid gap-[5px]`}>
       <HeadingText text="About me" />
       <div className="grid gap-5">
         {/* <ParagraphText text={about.description} /> */}
@@ -50,6 +49,6 @@ export default function AboutSection() {
           />
         </div>
       </div>
-    </AnimatedSection>
+    </section>
   );
 }
