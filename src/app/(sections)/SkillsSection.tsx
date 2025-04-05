@@ -14,7 +14,7 @@ export default function SkillsSection() {
     </div> */}
       <div className="flex flex-wrap gap-2.5 justify-center">
         {skills.map((skill) => (
-          <SkillCard {...skill} key={skill.id} />
+          <SkillCard {...skill} key={skill.id} hoverScale={false} />
         ))}
       </div>
     </AnimatedSection>

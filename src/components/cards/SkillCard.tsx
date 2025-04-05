@@ -17,12 +17,14 @@ export default function SkillCard({
   image,
   tags,
   description,
+  hoverScale = true,
 }: {
   id: number;
   title: string;
   image: string;
   tags: string[];
   description: string;
+  hoverScale?: boolean;
 }) {
   return (
     <div
@@ -36,7 +38,12 @@ export default function SkillCard({
         <p className="text-3xl text-white">{title}</p>
         <div className="flex gap-1 flex-wrap">
           {tags.map((tag, i) => (
-            <Tag key={i} text={tag} className="bg-white" />
+            <Tag
+              key={i}
+              text={tag}
+              className="bg-white"
+              hoverScale={hoverScale}
+            />
           ))}
         </div>
       </div>

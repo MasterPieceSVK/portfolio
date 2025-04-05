@@ -28,18 +28,6 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    title: "Portfolio website",
-    tags: ["Next.js", "Tailwind CSS", "Figma", "Docker"],
-    description:
-      "This is my personal portfolio website, built with Next.js and Tailwind CSS to showcase my skills, projects, and experience as a software developer. The site is designed to be fast, responsive, and user-friendly, providing visitors with an easy way to learn about my work and get in touch. It features sections for my projects, skills, certifications and more, all styled with Tailwind CSS for a modern and clean look.",
-    github: "https://github.com/MasterPieceSVK/portfolio",
-    live: "https://jaroscak.com",
-    figma:
-      "https://www.figma.com/design/fZ5hZHl3vvMn2kwI4vP2DM/Portfolio?node-id=1-2&t=JflDUKnBn8i5xJh8-1",
-    image: "/banners/portfolio.png",
-  },
-  {
-    id: 2,
     title: "OnTime",
     tags: [
       "Next.js",
@@ -56,6 +44,18 @@ export const projects = [
     figma:
       "https://www.figma.com/design/oMjjKCtkpiqdtWc46F7Wiq/OnTime?node-id=0-1&t=LZao0K3kdWSwrUrY-1",
     image: "/banners/ontimemockup.png",
+  },
+  {
+    id: 2,
+    title: "Portfolio website",
+    tags: ["Next.js", "Tailwind CSS", "Figma", "Docker"],
+    description:
+      "This is my personal portfolio website, built with Next.js and Tailwind CSS to showcase my skills, projects, and experience as a software developer. The site is designed to be fast, responsive, and user-friendly, providing visitors with an easy way to learn about my work and get in touch. It features sections for my projects, skills, certifications and more, all styled with Tailwind CSS for a modern and clean look.",
+    github: "https://github.com/MasterPieceSVK/portfolio",
+    live: "https://jaroscak.com",
+    figma:
+      "https://www.figma.com/design/fZ5hZHl3vvMn2kwI4vP2DM/Portfolio?node-id=1-2&t=JflDUKnBn8i5xJh8-1",
+    image: "/banners/portfolio_mockup.png",
   },
   {
     id: 3,
@@ -117,21 +117,21 @@ export const certifications = [
   },
   {
     id: 2,
-    title: "React Native",
+    title: "React Native Course",
     tags: ["React Native", "Expo"],
     link: "https://www.codecademy.com/profiles/MasterPieceSVK/certificates/458aef4eef5f5130685423fc15e6493d",
     image: "/banners/reactnative.webp",
   },
   {
     id: 3,
-    title: "Golang/Go",
+    title: "Golang/Go Course",
     tags: ["Go"],
     link: "https://www.codecademy.com/profiles/MasterPieceSVK/certificates/60773d2e920679c8e46ff634b9ed2e6e",
     image: "/banners/go.png",
   },
   {
     id: 4,
-    title: "C",
+    title: "C Course",
     tags: ["C"],
 
     link: "https://www.codecademy.com/profiles/MasterPieceSVK/certificates/9dba9d9b6bf64cf58b2b416ef9cd0912",
@@ -139,7 +139,7 @@ export const certifications = [
   },
   {
     id: 5,
-    title: "PHP",
+    title: "PHP Course",
     tags: ["PHP"],
 
     link: "https://www.codecademy.com/profiles/MasterPieceSVK/certificates/9b7bcc38d0ed49f593228763cbfd51e3",

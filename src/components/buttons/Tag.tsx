@@ -12,9 +12,11 @@ import { skills } from "@/lib/data";
 export default function Tag({
   text,
   className,
+  hoverScale = true,
 }: {
   text: string;
   className?: string;
+  hoverScale?: boolean;
 }) {
   const handleScroll = (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -43,7 +45,10 @@ export default function Tag({
             onClick={(e) => handleScroll(e, "#skills")}
             href={"#skills"}
             className={cn(
-              "text-xs font-medium bg-gray-custom w-fit grid place-items-center px-3.5 py-1 rounded-[50px] text-primary transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-lg",
+              "text-xs font-medium bg-gray-custom w-fit grid place-items-center px-3.5 py-1 rounded-[50px] text-primary ",
+              hoverScale &&
+                "transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-lg",
+              !hoverScale && "hover:cursor-default",
               className
             )}
           >

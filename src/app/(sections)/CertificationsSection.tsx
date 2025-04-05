@@ -6,7 +6,7 @@ import { certifications } from "@/lib/data";
 export default function CertificationsSection() {
   return (
     <AnimatedSection delay={4} id="certifications" className={"grid gap-2.5"}>
-      <HeadingText text="Certifcations" />
+      <HeadingText text="Certifications" />
       <div className="flex flex-wrap justify-center gap-14 ">
         {certifications.map((project) => (
           <Card variant="certification" {...project} key={project.id} />
