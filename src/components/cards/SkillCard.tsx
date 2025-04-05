@@ -36,10 +36,10 @@ export default function SkillCard({
         `flex-1 min-w-64 sm:max-w-72 bg-gradient-to-b from-third rounded-[10px] p-6 grid gap-3.5 transition duration-200 ease-in-out hover:scale-110 hover:shadow-lg`,
         `${gradientColors[id % gradientColors.length]}`,
         hoveredId === id
-          ? "brightness-125 transition duration-400 ease-in-out z-20"
-          : " brightness-50 transition duration-400 ease-in-out",
+          ? "xl:brightness-125 transition duration-400 ease-in-out z-20"
+          : "xl:brightness-50 transition duration-400 ease-in-out",
         hoveredId === null &&
-          "brightness-100 transition duration-400 ease-in-out"
+          "xl:brightness-100 transition duration-400 ease-in-out"
       )}
       onMouseEnter={() => {
         setHoveredId(id);
