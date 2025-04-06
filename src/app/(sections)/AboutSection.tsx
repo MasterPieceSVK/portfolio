@@ -11,10 +11,11 @@ import { about } from "@/lib/data";
 
 import CredentialsButton from "@/components/buttons/CredentialsButton";
 import Link from "next/link";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export default function AboutSection() {
   return (
-    <section id="about" className={`grid gap-[5px]`}>
+    <AnimatedSection id="about" className={`grid gap-[5px]`}>
       <HeadingText text="About me" />
       <div className="grid gap-5">
         {/* <ParagraphText text={about.description} /> */}
@@ -49,6 +50,6 @@ export default function AboutSection() {
           />
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

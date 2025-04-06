@@ -11,13 +11,20 @@ export default function AnimatedSection({
 }) {
   return (
     <motion.section
-      initial={{ opacity: 0, backdropFilter: "blur(10px)", y: 50 }}
-      whileInView={{ opacity: 1, backdropFilter: "blur(0px)", y: 0 }}
-      transition={{
-        duration: 2,
-        type: "spring",
+      initial={{
+        opacity: 0,
+        backdropFilter: "blur(10px)",
+        y: 100,
       }}
-      viewport={{ once: true }}
+      animate={{
+        opacity: 1,
+        backdropFilter: "blur(0px)",
+        y: 0,
+        transition: {
+          duration: 2.3,
+          type: "spring",
+        },
+      }}
       id={id}
       className={cn(className)}
     >

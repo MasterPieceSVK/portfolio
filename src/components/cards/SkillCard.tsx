@@ -37,7 +37,7 @@ export default function SkillCard({
         `${gradientColors[id % gradientColors.length]}`,
         hoveredId === id
           ? "xl:brightness-125 transition duration-400 ease-in-out z-20"
-          : "xl:brightness-50 transition duration-400 ease-in-out",
+          : "xl:brightness-75 transition duration-400 ease-in-out",
         hoveredId === null &&
           "xl:brightness-100 transition duration-400 ease-in-out"
       )}
