@@ -6,8 +6,6 @@ import { motion } from "motion/react";
 
 export default function Header() {
   const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress);
-  console.log(scrollYProgress.get());
 
   return (
     <>
