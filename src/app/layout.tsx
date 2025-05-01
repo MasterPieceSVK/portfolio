@@ -5,6 +5,7 @@ import Header from "../components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Script from "next/script";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
+
 export const hanalei_fill = Hanalei_Fill({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -44,6 +45,15 @@ export default function RootLayout({
     <html lang="en">
       <GoogleAnalytics gaId="G-HXXEG0YDB9" />
       <GoogleTagManager gtmId="GTM-NQ85V8DW" />
+      <Script type="text/javascript" id="clarity">
+        {`
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "rco6kahdk4");
+        `}
+      </Script>
 
       <Script
         id="matomo"
