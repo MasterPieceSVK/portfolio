@@ -56,7 +56,7 @@ export default function RootLayout({
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="https://www.rowbox.com/matomo/";
+    var u="https://www.mt.rowbox.com/matomo/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
     _paq.push(['setSiteId', '6']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
