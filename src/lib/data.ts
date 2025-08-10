@@ -39,7 +39,7 @@ export const projects = [
       "PWA",
     ],
     description:
-      "OnTime is a streamlined public transportation app designed to simplify your daily commute by focusing on essential features like departure times, vehicle locations, and real-time delays. Built with Next.js and TypeScript, it ensures fast performance with both server-side and client-side rendering. The app offers a PWA experience, allowing users to access it like a native app on mobile devices. With features like nearby stop detection, live vehicle tracking, favorites, and quick searches, OnTime delivers accurate and up-to-date transit information to help you plan your trips more efficiently.",
+      "OnTime is a smarter way to commute with Slovak public transport. Instead of searching for the same A-to-B route every day, simply pick your usual stop from the homepage and instantly see all upcoming departures with real-time delays and a live map. No need to type stop names or wait for route searches. Plus, with PWA support, OnTime works just like a native mobile app for quick, everyday access.",
     live: "https://ontime.jaroscak.com",
     figma:
       "https://www.figma.com/design/oMjjKCtkpiqdtWc46F7Wiq/OnTime?node-id=0-1&t=LZao0K3kdWSwrUrY-1",
