@@ -19,7 +19,8 @@ export const experience = [
     date: "2024 - Present",
     bulletPoints: [
       "Developed event management software for the Night of Chances conference, improving event organization and user experience.",
-      "Contributing to the UNISPACE mobile app, implementing a user coupon system and enhancing various app features.",
+      "Mainly working on UNISPACE mobile app right now",
+      "Also working on Zmudri.sk, UNIBER, and Tower Finance CRM",
       "Tech stack: Next.js, SvelteKit, TypeScript, React Native, Expo, GraphQL, tRPC, Tailwind CSS, Prisma.",
     ],
   },
