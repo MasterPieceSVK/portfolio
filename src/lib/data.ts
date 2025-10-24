@@ -21,7 +21,7 @@ export const experience = [
       "Developed event management software for the Night of Chances conference, improving event organization and user experience.",
       "Mainly working on UNISPACE mobile app right now",
       "Also working on Zmudri.sk, UNIBER, and Tower Finance CRM",
-      "Tech stack: Next.js, Nuxt.js, SvelteKit, TypeScript, React Native, Expo, GraphQL, tRPC, Tailwind CSS, Prisma, Strapi CMS.",
+      "Tech stack: Next.js, Nuxt.js, SvelteKit, TypeScript, React Native, Expo, GraphQL, tRPC, Tailwind CSS, Prisma, Strapi CMS and more",
     ],
   },
 ];
