@@ -2,7 +2,7 @@ export const about = {
   welcomingText: "Passionate about coding, building, and making an impact.",
   description:
     "As a college student passionate about software engineering, I am eager to learn and create impactful projects. I have developed applications that solve real-world problems and enhance everyday experiences.",
-  school: "STU Fakulta informatiky a informačných technológií (FIIT)",
+  school: "Faculty of Informatics and Information Technologies STU in Bratislava (STU FIIT)",
   email: "maximilian.jaroscak@gmail.com",
   location: "Bratislava, Slovakia",
   linkedin:
