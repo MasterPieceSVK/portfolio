@@ -2,7 +2,8 @@ export const about = {
   welcomingText: "Passionate about coding, building, and making an impact.",
   description:
     "As a college student passionate about software engineering, I am eager to learn and create impactful projects. I have developed applications that solve real-world problems and enhance everyday experiences.",
-  school: "Faculty of Informatics and Information Technologies STU in Bratislava (STU FIIT)",
+  school:
+    "Faculty of Informatics and Information Technologies STU in Bratislava (STU FIIT)",
   email: "maximilian.jaroscak@gmail.com",
   location: "Bratislava, Slovakia",
   linkedin:
@@ -29,6 +30,23 @@ export const experience = [
 export const projects = [
   {
     id: 1,
+    title: "Food price statistics website",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn",
+      "Redis",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    description:
+      "This project is a food price statistics website that provides users with up-to-date information on food prices in Slovak supermarkets like Lidl, Tesco, Kaufland, Billa, Terno and FreshPlus.",
+    live: "https://ceny.jaroscak.sk",
+    image: "/banners/cenypotravin.png",
+  },
+  {
+    id: 2,
     title: "OnTime",
     tags: [
       "Next.js",
@@ -41,13 +59,13 @@ export const projects = [
     ],
     description:
       "OnTime is a smarter way to commute with Slovak public transport. Instead of searching for the same A-to-B route every day, simply pick your usual stop from the homepage and instantly see all upcoming departures with real-time delays and a live map. No need to type stop names or wait for route searches. Plus, with PWA support, OnTime works just like a native mobile app for quick, everyday access.",
-    live: "https://ontime.jaroscak.com",
+    live: "https://ontime.jaroscak.sk",
     figma:
       "https://www.figma.com/design/oMjjKCtkpiqdtWc46F7Wiq/OnTime?node-id=0-1&t=LZao0K3kdWSwrUrY-1",
     image: "/banners/ontimemockup.png",
   },
   {
-    id: 2,
+    id: 3,
     title: "Portfolio website",
     tags: ["Next.js", "Tailwind CSS", "Figma", "Docker"],
     description:
@@ -59,7 +77,7 @@ export const projects = [
     image: "/banners/portfolio_mockup.png",
   },
   {
-    id: 3,
+    id: 4,
     title: "Quizzy - AI Quiz App",
     tags: [
       "Next.js",
@@ -78,7 +96,7 @@ export const projects = [
     image: "/banners/quizzy.png",
   },
   {
-    id: 4,
+    id: 5,
     title: "OCR Grade calculator",
     tags: [
       "Next.js",
