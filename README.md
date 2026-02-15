@@ -1,4 +1,4 @@
-Live on [jaroscak.com](https://jaroscak.com)
+Live on [jaroscak.sk](https://jaroscak.sk)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
