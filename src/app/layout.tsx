@@ -23,7 +23,7 @@ export const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.jaroscak.com"),
+  metadataBase: new URL("https://www.jaroscak.sk"),
   title: "Maximilian Jaroscak",
   description: "Welcome to my personal portfolio website.",
   openGraph: {

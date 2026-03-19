@@ -71,7 +71,7 @@ export const projects = [
     description:
       "This is my personal portfolio website, built with Next.js and Tailwind CSS to showcase my skills, projects, and experience as a software developer. The site is designed to be fast, responsive, and user-friendly, providing visitors with an easy way to learn about my work and get in touch. It features sections for my projects, skills, certifications and more, all styled with Tailwind CSS for a modern and clean look.",
     github: "https://github.com/MasterPieceSVK/portfolio",
-    live: "https://jaroscak.com",
+    live: "https://jaroscak.sk",
     figma:
       "https://www.figma.com/design/fZ5hZHl3vvMn2kwI4vP2DM/Portfolio?node-id=1-2&t=JflDUKnBn8i5xJh8-1",
     image: "/banners/portfolio_mockup.png",
