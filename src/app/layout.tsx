@@ -3,7 +3,6 @@ import { Jost, Hanalei_Fill, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header/Header";
 import Footer from "@/components/footer/Footer";
-import Script from "next/script";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import ClarityScript from "@/components/text/ClarityScript";
 
